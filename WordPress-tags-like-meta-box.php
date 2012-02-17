@@ -49,8 +49,6 @@ class Tags_Like_Meta_Box {
 	function get_stored_data($post_id) {
 		if ( get_post_meta($post_id, $this->ID, true) )
 			echo get_post_meta($post_id, $this->ID, true);
-		else
-			echo "boo";
 	}
 
 	function meta_box($post, $box) {
