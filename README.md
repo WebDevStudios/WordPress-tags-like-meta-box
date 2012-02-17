@@ -1,4 +1,4 @@
-# WordPress Tags Like Meta Box
+# WordPress Tags-Like Meta Box
 
 The WordPress tags meta box has a great interface for dealing with data. 
 This helper class will allow you to customize a tags-like meta box of your own with ease.
