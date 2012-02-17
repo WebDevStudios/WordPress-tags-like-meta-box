@@ -20,7 +20,8 @@ class Tags_Like_Meta_Box {
 		add_action('admin_head', array($this, 'add_style') );
 		add_action('wp_ajax_get_post_notes', array($this, 'ajax_get_tags' ), 1 );
 		add_action('save_post', array($this, 'save_post') );
-		add_action('admin_footer', array($this, 'jQuery'));
+		add_action('admin_footer-post.php', array($this, 'jQuery'));
+		add_action('admin_footer-post-new.php', array($this, 'jQuery'));
 	}
 
 	function add_style() {
