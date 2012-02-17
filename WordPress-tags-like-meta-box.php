@@ -18,7 +18,6 @@ class Tags_Like_Meta_Box {
 		wp_enqueue_script('jquery');
 		add_action('add_meta_boxes', array( $this, 'add_meta_box') );
 		add_action('admin_head', array($this, 'add_style') );
-		add_action('wp_ajax_get_post_notes', array($this, 'ajax_get_tags' ), 1 );
 		add_action('save_post', array($this, 'save_post') );
 		add_action('admin_footer-post.php', array($this, 'jQuery'));
 		add_action('admin_footer-post-new.php', array($this, 'jQuery'));
