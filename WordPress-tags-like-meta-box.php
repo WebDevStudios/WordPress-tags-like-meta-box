@@ -15,12 +15,12 @@ class Tags_Like_Meta_Box {
 		$this->labels->new = $this->ID . "-new";
 		$this->labels->add_button = $this->ID . "-add_button";
 		
-		add_action('admin_enqueue_scripts', array( $this, 'load_js') );
+		wp_enqueue_script('jquery');
 		add_action('add_meta_boxes', array( $this, 'add_meta_box') );
 		add_action('admin_head', array($this, 'add_style') );
 		add_action('wp_ajax_get_post_notes', array($this, 'ajax_get_tags' ), 1 );
 		add_action('save_post', array($this, 'save_post') );
-		add_action('admin_head', array($this, 'jQuery'));
+		add_action('admin_footer', array($this, 'jQuery'));
 	}
 
 	function add_style() {
