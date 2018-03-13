@@ -62,7 +62,7 @@ class Tags_Like_Meta_Box {
 		$disabled = !1 == 1 ? 'disabled="disabled"' : '';
 		?>
 		<div class="<?php echo $this->labels->div; ?>" id="<?php echo $this->ID; ?>">
-			<div class="jaxtag">
+			<div class="ajaxtag">
 			<div class="nojs-tags hide-if-js">
 			<p>Text</p>
 			<textarea name="<?php echo $this->labels->textarea; ?>" rows="3" cols="20" class="<?php echo $this->labels->textarea; ?>" id="<?php echo $this->labels->textarea; ?>" <?php echo $disabled; ?>><?php echo $this->get_stored_data( $post->ID ); // textarea_escaped by esc_attr() ?></textarea></div>
